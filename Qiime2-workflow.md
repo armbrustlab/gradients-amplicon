@@ -149,7 +149,7 @@ qiime demux summarize \
   --o-visualization demux.qzv
 ```
 Looking at read quality, it's very high until about 220 bp in the fwd reads.
-- Using our newfound info on sequence quality we use dada2 to get ASVs. (Use as many CPUs as you can here.
+- Using our newfound info on sequence quality we use dada2 to get ASVs. (Use as many CPU cores as you can here.)
 ```
 nohup qiime dada2 denoise-single \
   --i-demultiplexed-seqs g1-18S-fwd-adapter-trimmed.qza \
