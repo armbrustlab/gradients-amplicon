@@ -177,6 +177,13 @@ qiime  metadata  tabulate \
 ```
 This run was considerably faster than the OTU-based search. 
 - The same as above but with PR2!
+
+
+## Follow-up filtering for all samples
+- Remove samples with < 10,000 sequences. (63693, 63837, 64041) One of these is our mystery 'unassigned' sample. 
+- Filter out metazoan reads.
+- Filter very rare ASVs/OTUs. (Abundance of ASV is < 10 summed across all samples)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbODY0NDM3OTMyLDE4MTY4NDM4MjAsLTY1OT
 AzODUyMSwtMTUyODE3NDI1OSwtMTk4NTgxMDUwLC0yMDI3NzM5
