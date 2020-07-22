@@ -11,12 +11,7 @@ filename=$(basename -- "$file")
 filename_no_ext="${filename%.*}"
 
 qc=$2
-
 process=$3
-
-mkdir int_files
-mkdir int_files/viz
-mkdir output_tables
 
 if [qc == true]
 then
